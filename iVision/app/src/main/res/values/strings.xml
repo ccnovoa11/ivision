@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">iVision</string>
+    <string name="title_activity_geo_point">Map</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
