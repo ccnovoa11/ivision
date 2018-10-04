@@ -3,6 +3,7 @@ package com.example.mac.ivision;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
 import com.google.android.gms.location.places.ui.PlacePicker;
@@ -13,6 +14,7 @@ public class NuevoCirculoInicio extends AppCompatActivity
 
     TextView edText;
     int PLACE_PICKER_REQUEST = 1;
+    Button crearCirculo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,9 +28,6 @@ public class NuevoCirculoInicio extends AppCompatActivity
             public void onClick(View v)
             {
 
-                //Intent intentMaps = new Intent(NuevoCirculoInicio.this, MapsActivity.class);
-                //NuevoCirculoInicio.this.startActivity(intentMaps);
-
                 PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
 
                 try
@@ -39,6 +38,17 @@ public class NuevoCirculoInicio extends AppCompatActivity
                 {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        crearCirculo = findViewById(R.id.button);
+        crearCirculo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentInicio = new Intent(NuevoCirculoInicio.this, BottomNavigation.class);
+                NuevoCirculoInicio.this.startActivity(intentInicio);
+
             }
         });
     }

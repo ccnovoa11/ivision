@@ -28,7 +28,7 @@
     <EditText
         android:layout_width="550px"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:inputType="text"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="307dp"
@@ -54,7 +54,7 @@
         android:layout_gravity="center"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonR"
         android:layout_width="360px"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -18,7 +18,7 @@
     <EditText
         android:layout_width="550px"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:inputType="text"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="270dp"
