@@ -43,6 +43,7 @@
         <activity
             android:name=".BottomNavigation"
             android:label="@string/title_activity_bottom_navigation"></activity>
+        <activity android:name=".UserAdd"></activity>
     </application>
 
 </manifest>
